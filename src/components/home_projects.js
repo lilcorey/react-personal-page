@@ -6,6 +6,12 @@ import ProjectDesc from './project_desc';
 class HomeProjects extends Component {
   
   renderProjects(){
+    return(
+      <div className="col-md row">
+        <ProjectDesc/>
+        <hr></hr>
+      </div>
+    );
 
   }
 

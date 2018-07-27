@@ -3,7 +3,6 @@ import '../style/home_page.css';
 
 import HomeHeader from './home_header';
 import HomeProjects from './home_projects';
-import HomeAbout from './home_content/home_about';
 import MarkdownLoader from './markdown_loader';
 
 class HomePage extends Component {
@@ -21,7 +20,7 @@ class HomePage extends Component {
         <div className="container max-w">
         <MarkdownLoader filePath="home_about"/>
         </div>
-        <HomeProjects className="max-w"/>
+        <HomeProjects/>
       </div>
     </div>
     );
