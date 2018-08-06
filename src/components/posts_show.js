@@ -4,8 +4,6 @@ import { fetchPost, deletePost } from '../actions';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
-import HomeHeader from './home_header';
-
 class PostsShow extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;
@@ -21,11 +19,7 @@ class PostsShow extends Component {
 
   render() {
     const {post} = this.props;
-    const hdrAttr = {colorName: "gradient-blog",
-    navlinks: [""],
-    headerBig: "My Thots",
-    headerText: "This blog is strictly a place for me to form my thoughts on topics I find interesting."};
-
+ 
     if(!post){
       return(
         <div>Loading...</div>
@@ -33,7 +27,6 @@ class PostsShow extends Component {
     }
     return(
       <div>
-      <HomeHeader headerAttr={hdrAttr}/>
       <div className="container max-w" style={{paddingTop: '50px'}}>
         <Link className="pull-xs-right" to="/blog">Back to Index</Link>
         <h3>{ post.title }</h3>

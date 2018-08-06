@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { fetchPosts } from '../actions';
 import _ from 'lodash';
 
-import HomeHeader from './home_header';
 
 class PostsIndex extends Component {
   componentDidMount() {
@@ -24,15 +23,9 @@ class PostsIndex extends Component {
     });
   }
   render() {
-    const hdrAttr = {colorName: "gradient-blog",
-                        navlinks: [""],
-                        headerBig: "My Thots",
-                        headerText: "This blog is strictly a place for me to form my thoughts on topics I find interesting."};
-
 
     return(
       <div>
-      <HomeHeader headerAttr={hdrAttr}/>
       <div className="container max-w" style={{paddingTop: '50px'}}>
         <h3>Posts</h3>
         <ul className="list-group">

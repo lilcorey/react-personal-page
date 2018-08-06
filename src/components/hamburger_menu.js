@@ -3,9 +3,9 @@ import { slide as Menu } from 'react-burger-menu';
 import _ from 'lodash';
 import { Link } from 'react-router-dom';
 
-import hamBurger from '../style/burger.png';
+// using the default img for now from the component
+//import hamBurger from '../style/burger.png';
 import { styles } from '../style/nav_style';
-//import '../style/home_page.css';
 
 
 class HamburgerMenu extends Component {

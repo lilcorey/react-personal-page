@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = (props) => (
   <div>
-    {console.log(props)}
+    {console.log(JSON.stringify(props))}
   {this.props};
   </div>
 );

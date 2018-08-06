@@ -41,7 +41,6 @@ class PostsNew extends Component {
 
     return(
       <div>
-      <HomeHeader headerAttr={hdrAttr}/>
       <div className="container">
       <form onSubmit={handleSubmit(this.onSubmit.bind(this))} style={{paddingTop: '50px'}}>
         <Field

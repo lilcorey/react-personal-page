@@ -19,7 +19,6 @@ class MarkdownLoader extends Component {
      }
      return(
       <div>
-        {console.log(this.state.terms)}
         <ReactMarkdown source={this.state.terms}/>
       </div>
      );
