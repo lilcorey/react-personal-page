@@ -6,11 +6,11 @@ export const CREATE_POST = 'create_post';
 export const DELETE_POST = 'delete_post';
 
 //const ROOT_URL = 'https://reduxblog.herokuapp.com/api';
-const ROOT_URL = 'http://127.0.0.1:8000';
+const ROOT_URL = 'http://lilcorey10.pythonanywhere.com';
 const API_KEY = '?key=cj123';
 
 export function fetchPosts() {
-  const request = axios.get(`${ROOT_URL}/posts`);
+  const request = axios.get(`${ROOT_URL}/posts/`);
   return{
     type: FETCH_POSTS,
     payload: request
@@ -18,7 +18,7 @@ export function fetchPosts() {
 }
 
 export function createPost(values, callback) {
-  const request = axios.post(`${ROOT_URL}/posts`, values)
+  const request = axios.post(`${ROOT_URL}/posts/`, values)
     .then( () => callback() );
 
   return {
