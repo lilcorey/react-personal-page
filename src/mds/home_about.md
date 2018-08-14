@@ -8,4 +8,4 @@ You can find me on GitHub [@lilcorey][1] and LinkedIn [@corey-edelman][2]
 [1]: https://github.com/lilcorey
 [2]: https://linkedin.com/in/corey-edelman
 
-Want to chat? Have a question? Feel free to [email](mailto:cedelma@g.clemson.edu) me.
+Want to chat? Have a question? Feel free to [email](mailto:cedelma@g.clemson.edu?subject=edelman.io) me.
