@@ -6,14 +6,20 @@ import MarkdownLoader from './markdown_loader';
 
 class HomePage extends Component {
 
+  componentDidUpdate() {
+    const node = this.refs.projs;
+    node && node.scrollIntoView({block: 'end', behavior: 'smooth'});
+  }
   render() {    
     return(
     <div>
       <div className="" style={{paddingTop: '0px'}}>
-        <div className="container max-w">
+        <div id="about" className="container max-w">
         <MarkdownLoader filePath="home_about"/>
         </div>
-        <HomeProjects/>
+        <div id="projects" ref="projs">
+          <HomeProjects/>
+        </div>
       </div>
     </div>
     );

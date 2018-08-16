@@ -22,15 +22,15 @@ class HomeProjects extends Component {
           <h2> Projects</h2>
           <hr></hr>
           <div className="col-md row">
-            <ProjectDesc/>
+            <ProjectDesc selection="blog"/>
           </div>
           <hr></hr>
           <div className="col-lg row">
-            <ProjectDesc/>
+            <ProjectDesc selection="specials"/>
           </div>
           <hr></hr>
           <div className="col-md row">
-          <ProjectDesc/>
+            <ProjectDesc selection=""/>
           </div>
           <hr></hr>
         </div>
