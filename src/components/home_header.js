@@ -10,6 +10,11 @@ export default class HomeHeader extends Component {
     headerBig: "Corey Edelman",
     headerText: `The likely reason I'm an engineer is because I get a dopamine rush when solving problems with `};
 
+    const resumeHeader = {colorName: "gradient-resume",
+    navlinks: [""],
+    headerBig: "Resume",
+    headerText: "Need to come up with something to say about this..."};
+
     const uhohHeader = {colorName: "gradient-blog",
     navlinks: [""],
     headerBig: "Uh Oh",
@@ -28,6 +33,9 @@ export default class HomeHeader extends Component {
     }
     else if(path.startsWith("/blog/post")){
       return postsHeader;
+    }
+    else if(path === "/resume"){
+      return resumeHeader;
     }
     else{
       return uhohHeader;

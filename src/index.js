@@ -10,6 +10,7 @@ import HomePage from './components/home_page';
 import HomeHeader from './components/home_header';
 import HamburgerMenu from './components/hamburger_menu';
 import PostsIndex from './components/posts_index';
+import Resume from './components/resume_index';
 import Page404 from './components/404';
 // commented out since Im not adding posts from the blog
 //import PostsNew from './components/post_new';
@@ -36,6 +37,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/blog/posts/:id" component={PostsShow} />
         <Route exact path="/blog" component={PostsIndex} />
+        <Route path="/resume" component={Resume} />
         <Route exact path="/" component={HomePage} />
         <Route component={Page404} />
       </Switch>

@@ -38,6 +38,7 @@ class HamburgerMenu extends Component {
   render(){
     const navItems = {Home: '/',
                       Blog: '/blog',
+                      Resume: '/resume',
                       ClemsonSpecials: '/clemsonspecials',
                       Notes: '/notes'};
     
