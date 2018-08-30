@@ -28,6 +28,10 @@ body {
   background-image: linear-gradient( 45deg, #EE9AE5 11%, #5961F9 130%);
 }
 
+.img-shadow {
+  box-shadow: 0 30px 40px 0 rgba(16,36,94,.2);
+}
+
 .resume-styles {
   box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
   background: #fff;

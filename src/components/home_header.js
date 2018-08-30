@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../style/home_page.css';
 
@@ -63,7 +64,8 @@ export default class HomeHeader extends Component {
             <div className="container max-w">
               {headerAttr.navlinks.map( link => 
                 <div key={link} className="col-sm-3">
-                  <a className="nav-link" href={"/#"+link}>{link}</a>
+                {link === "resume" ? <Link className="nav-link" to="/resume">resume</Link> : <a className="nav-link" href={"/#"+link}>{link}</a>}
+                  
                 </div>
               )}
             </div>

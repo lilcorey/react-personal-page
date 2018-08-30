@@ -27,7 +27,7 @@ class ProjectDesc extends Component {
             </p>
           </article>
           <aside className="float-left col-sm-6" style={{display: 'inline-block'}}>
-            <img src={blog} className="img-fluid" style={{maxWidth: '100%'}}/>
+            <img src={blog} className="img-fluid img-shadow" style={{maxWidth: '100%'}}/>
           </aside>
         </section>
               </div>
@@ -51,7 +51,7 @@ class ProjectDesc extends Component {
             </p>
           </article>
           <aside className="float-left col-sm-6" style={{display: 'inline-block'}}>
-            <img src={specials} className="img-fluid" style={{maxWidth: '100%'}}/>
+            <img src={specials} className="img-fluid img-shadow" style={{maxWidth: '100%'}}/>
           </aside>
         </section>
               </div>
