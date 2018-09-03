@@ -32,6 +32,10 @@ body {
   box-shadow: 0 30px 40px 0 rgba(16,36,94,.2);
 }
 
+.proj-padding {
+  padding-bottom: 30px;
+}
+
 .resume-styles {
   box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
   background: #fff;

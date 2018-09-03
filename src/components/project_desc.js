@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import specials from '../style/specials.png';
 import blog from '../style/blog.png';
+import weather from '../style/weather.png';
 
 class ProjectDesc extends Component {
 
@@ -54,10 +55,33 @@ class ProjectDesc extends Component {
             <img src={specials} className="img-fluid img-shadow" style={{maxWidth: '100%'}}/>
           </aside>
         </section>
-              </div>
+      </div>
       
     );
   }
+  renderWeather(){
+    return(
+      <div>
+        <section>
+          <article className="float-right col-sm-6" style={{display: 'inline-block'}}>
+            <h3> Weekly Forecast </h3>
+            <p>
+              This SPA gets your 5 day forecast for any given location recognized by the Google Geocode API.
+            </p>
+            <p>
+              Specs: The Weekly Forecast weather app is built from React and utilized the Google
+              Geocode API and Darksky Weather API. The static site is hosted on surge.sh. 
+            </p>
+          </article>
+          <aside className="float-left col-sm-6" style={{display: 'inline-block'}}>
+            <img src={weather} className="img-fluid img-shadow" style={{maxWidth: '100%'}}/>
+          </aside>
+        </section>
+      </div>
+      
+    );
+  }
+  
 
   render(){
     //const content = {"": "../style/specials.png"};
@@ -67,6 +91,8 @@ class ProjectDesc extends Component {
         return this.renderBlog();
       case 'specials':
         return this.renderSpecials();
+      case 'weather':
+        return this.renderWeather();
       default:
         return( 
           <div>
