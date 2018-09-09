@@ -21,7 +21,7 @@ body {
 }
 
 .gradient-resume {
-  background-image: linear-gradient( 135deg, rgb(4, 104, 197) 10%, rgb(66, 185, 201) 100%);
+  background-image: linear-gradient( 135deg, rgb(66, 185, 201) 10%, rgb(4, 104, 197) 100%);
 }
 
 .gradient-nav {
@@ -40,6 +40,7 @@ body {
   box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
   background: #fff;
   margin-top: 50px;
+  max-width: 48%;
 }
 
 .sidenav-link {
