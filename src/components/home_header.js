@@ -14,12 +14,17 @@ export default class HomeHeader extends Component {
     const resumeHeader = {colorName: "gradient-resume",
     navlinks: [""],
     headerBig: "Resume",
-    headerText: "Need to come up with something to say about this..."};
+    headerText: "Everything you need to know about me condensed to one page."};
 
     const uhohHeader = {colorName: "gradient-blog",
     navlinks: [""],
     headerBig: "Uh Oh",
-    headerText: "This page doesnt exist (404)"};
+    headerText: "This page doesn't exist"};
+
+    const constructionHeader = {colorName: "gradient-blog",
+    navlinks: [""],
+    headerBig: "Come Back Soon",
+    headerText: "This page is still being built."};
 
     const postsHeader = {colorName: "gradient-blog",
     navlinks: [""],
@@ -29,14 +34,14 @@ export default class HomeHeader extends Component {
     if(path === "/"){
       return homeHeader;
     }
-    else if(path === "/blog"){
-      return postsHeader;
-    }
-    else if(path.startsWith("/blog/post")){
+    else if(path.startsWith("/blog")){
       return postsHeader;
     }
     else if(path === "/resume"){
       return resumeHeader;
+    }
+    else if(path === "/notes" || path === "/clemsonspecials"){
+      return constructionHeader;
     }
     else{
       return uhohHeader;

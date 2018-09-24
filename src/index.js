@@ -12,6 +12,7 @@ import HamburgerMenu from './components/hamburger_menu';
 import PostsIndex from './components/posts_index';
 import Resume from './components/resume_index';
 import Page404 from './components/404';
+import UnderConstruction from './components/under_construction';
 // commented out since Im not adding posts from the blog
 //import PostsNew from './components/post_new';
 import PostsShow from './components/posts_show';
@@ -37,7 +38,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/blog/posts/:id" component={PostsShow} />
         <Route exact path="/blog" component={PostsIndex} />
-        <Route path="/resume" component={Resume} />
+        <Route exact path="/resume" component={Resume} />
+        <Route exact path="/notes" component={UnderConstruction} />
+        <Route exact path="/clemsonspecials" component={UnderConstruction} />
         <Route exact path="/" component={HomePage} />
         <Route component={Page404} />
       </Switch>

@@ -28,6 +28,28 @@ body {
   background-image: linear-gradient( 45deg, #EE9AE5 11%, #5961F9 130%);
 }
 
+.css404 {
+  font-size: 10em;
+  text-align:center;
+  display:block;
+  position: relative;
+  padding-bottom: 0;
+}
+.cssSoon {
+  font-size: 8em;
+  text-align:center;
+  display:block;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.pageNotFound {
+  padding-top: 0;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
 .img-shadow {
   box-shadow: 0 30px 40px 0 rgba(16,36,94,.2);
 }
