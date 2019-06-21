@@ -8,14 +8,7 @@ import promise from 'redux-promise';
 import './index.css';
 import HomePage from './components/home_page';
 import HomeHeader from './components/home_header';
-import HamburgerMenu from './components/hamburger_menu';
-import PostsIndex from './components/posts_index';
-import Resume from './components/resume_index';
 import Page404 from './components/404';
-import UnderConstruction from './components/under_construction';
-// commented out since Im not adding posts from the blog
-//import PostsNew from './components/post_new';
-import PostsShow from './components/posts_show';
 import Footer from './components/footer'
 import reducers from './reducers';
 
@@ -31,23 +24,16 @@ const HeaderRoute = withRouter((props) => {
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-  <BrowserRouter>
-    <div>
-      <HamburgerMenu/>
-      <HeaderRoute/>
-      <Switch>
-        <Route path="/blog/posts/:id" component={PostsShow} />
-        <Route exact path="/blog" component={PostsIndex} />
-        <Route exact path="/resume" component={Resume} />
-        <Route exact path="/notes" component={UnderConstruction} />
-        <Route exact path="/clemsonspecials" component={UnderConstruction} />
-        <Route exact path="/" component={HomePage} />
-        <Route component={Page404} />
-      </Switch>
-      <Footer/>
-    </div>
-  </BrowserRouter>
-</Provider>
+   <BrowserRouter>
+     <div>
+       <Switch>
+         <Route exact path="/" component={HomePage} />
+         <Route component={Page404} />
+       </Switch>
+       <Footer/>
+     </div>
+   </BrowserRouter>
+ </Provider>
 
   , document.getElementById('root'));
 registerServiceWorker();
